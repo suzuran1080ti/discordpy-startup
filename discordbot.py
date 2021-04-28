@@ -22,7 +22,7 @@ bot.run(token)
 
 ID_CHANNEL_WELCOME = 836220806761021514 # 入室用チャンネルのID(int)
 ID_ROLE_WELCOME = 836940685184860180 # 付けたい役職のID(int)
-EMOJI_WELCOME = ':thumbsup:' # 対応する絵文字
+EMOJI_WELCOME = 'ballot_box_with_check' # 対応する絵文字
 
 # 役職を付与する非同期関数を定義
 async def grant_role(payload):
