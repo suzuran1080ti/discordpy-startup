@@ -14,8 +14,8 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
+async def tutorial(ctx):
+    await ctx.send('このサーバーの仕組みについて説明します。')
 
 CHANNEL_ID = 836220806761021514 # 任意のチャンネルID(int)
 
