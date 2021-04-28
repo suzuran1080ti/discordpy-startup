@@ -17,8 +17,17 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
+CHANNEL_ID = 836220806761021514 # 任意のチャンネルID(int)
 
-bot.run(token)
+# 任意のチャンネルで挨拶する非同期関数を定義
+async def greet():
+    channel = client.get_channel(CHANNEL_ID)
+    await channel.send('起動しました')
+
+# bot起動時に実行されるイベントハンドラを定義
+@client.event
+async def on_ready():
+    await greet() # 挨拶する非同期関数を実行
 
 ID_CHANNEL_WELCOME = 836220806761021514 # 入室用チャンネルのID(int)
 ID_ROLE_WELCOME = 836940685184860180 # 付けたい役職のID(int)
@@ -48,3 +57,8 @@ async def on_raw_reaction_add(payload):
     if member is not None: # 役職を付与したメンバーがいる時
         text = f'{member.mention} ようこそ3MEサーバーへ！認証が終わるまで、サーバーを見学してお待ちください！'
         await client.get_channel(ID_CHANNEL_WELCOME).send(text)
+
+    
+    
+bot.run(token)
+
