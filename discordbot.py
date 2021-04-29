@@ -16,6 +16,8 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def tutorial(ctx):
     await ctx.send('このサーバーの仕組みについて説明します。')
+    
+    bot.run(token)
 
 CHANNEL_ID = 836220806761021514 # 任意のチャンネルID(int)
 
@@ -60,5 +62,5 @@ async def on_raw_reaction_add(payload):
 
     
     
-bot.run(token)
+
 
