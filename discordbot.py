@@ -19,7 +19,6 @@ async def ping(ctx):
 
 
 bot.run(token)
-© 2021 GitHub, Inc.
 
     
     
