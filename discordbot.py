@@ -13,9 +13,7 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 class PagerWithEmojis:
-    """
-    受け取った絵文字によってページを移動するためのクラス
-    """
+    
     LEFT_ARROW: str = "\N{LEFTWARDS BLACK ARROW}\N{VARIATION SELECTOR-16}"
     RIGHT_ARROW: str = "\N{BLACK RIGHTWARDS ARROW}\N{VARIATION SELECTOR-16}"
     STOP: str = "\N{CROSS MARK}"
@@ -35,9 +33,7 @@ class PagerWithEmojis:
 
     @property
     def page_emojis(self) -> list[str]:
-        """
-        現在ページを出力する際に追加する必要のある絵文字のリストを返します。
-        """
+        
         emojis: list[str] = [self.LEFT_ARROW,self.RIGHT_ARROW,self.STOP]
         if self.page_index == 0:
             # もし、今最初のページにいるなら左へ移動する絵文字を除外する
@@ -48,18 +44,14 @@ class PagerWithEmojis:
         return emojis
 
     def move_page_by_emoji(self, emoji: str):
-        """
-        絵文字を受け取って、参照するページを変更します。
-        """
+        
         if emoji == self.LEFT_ARROW:
             self.page_index -= 1
         elif emoji == self.RIGHT_ARROW:
             self.page_index += 1
 
     async def discord_pager(self, ctx: commands.Context):
-        """
-        コマンドのContextを受け取って、Discord上でページ移動の受付・処理を行います。
-        """
+        
         now_page = self.now_page
         emojis = self.page_emojis
         # 現在ページ内容と、出力に必要な絵文字を取得
