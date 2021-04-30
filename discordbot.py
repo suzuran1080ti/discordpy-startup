@@ -41,4 +41,4 @@ async def on_message(message):
         await message.channel.send("再生します。")
 
 # 接続する。
-client.run("TOKEN")
+client.run(token)
