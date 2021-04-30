@@ -33,6 +33,11 @@ async def server1(ctx):
     await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
     await ctx.send('ここでは課題や予定の管理をはじめとし、様々なコミュニケーションを図れます。')
 
+bot.run("TOKEN")
+
+from discord.ext import commands
+import os
+import traceback
 
 class PagerWithEmojis:
     """
@@ -108,6 +113,8 @@ class PagerWithEmojis:
             for emoji in emojis:
                 await msg.add_reaction(emoji)
 
+bot = commands.Bot(command_prefix='/')
+token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.command()
 async def server(ctx: commands.Context):
