@@ -22,10 +22,15 @@ async def tutorial(ctx):
     await ctx.send('チュートリアルを開始します。')
     await ctx.send('知りたい内容があれば以下のコマンドを入力してください！')
     
+    await ctx.send('/server')
+    await ctx.send('サーバーの概要')
+
+
+
 @bot.command()
 async def server(ctx):
-    await ctx.send('このサーバーは有志によって作られたクラスサーバーです。ここでは課題や予定の管理をはじめとし、様々なコミュニケーションを図れます。')
-     
+    await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
+    await ctx.send('ここでは課題や予定の管理をはじめとし、様々なコミュニケーションを図れます。')
 
 bot.run(token)
 
