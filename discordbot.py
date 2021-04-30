@@ -14,7 +14,8 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def begin(ctx):
-    await ctx.send('3MEサーバーへようこそ！まずは「/tutorial」と入力して、サーバーについて学びましょう！')
+    await ctx.send('3MEサーバーへようこそ！')
+    await ctx.send('まずは「/tutorial」と入力して、サーバーについて学びましょう！')
 
 
 @bot.command()
