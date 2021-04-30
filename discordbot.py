@@ -1,6 +1,5 @@
+import discord
 from discord.ext import commands
-import os
-import traceback
 
 class PagerWithEmojis:
     """
@@ -76,11 +75,10 @@ class PagerWithEmojis:
             for emoji in emojis:
                 await msg.add_reaction(emoji)
 
-bot = commands.Bot(command_prefix='/')
-token = os.environ['DISCORD_BOT_TOKEN']
+bot = commands.Bot(command_prefix="!")
 
 @bot.command()
-async def server(ctx: commands.Context):
+async def page_test(ctx: commands.Context):
     pages: list[discord.Embed] = [
         discord.Embed(
             title="1ページ目です。",
@@ -101,18 +99,4 @@ async def server(ctx: commands.Context):
     pager = PagerWithEmojis(pages)
     await pager.discord_pager(ctx)
 
-
-@bot.event
-async def on_command_error(ctx, error):
-    orig_error = getattr(error, "original", error)
-    error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await ctx.send(error_msg)
-
-
-
 bot.run("TOKEN")
-
-    
-    
-
-
