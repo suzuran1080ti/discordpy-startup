@@ -28,7 +28,7 @@ async def tutorial(ctx):
 
 
 @bot.command()
-async def server1(ctx):
+async def server(ctx):
     await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
     await ctx.send('ここでは課題や予定の管理をはじめとし、様々なコミュニケーションを図れます。')
 
