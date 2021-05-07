@@ -36,9 +36,14 @@ async def tutorial(ctx):
     await ctx.send('利用規約')
 
     await ctx.send('/next')
-    await ctx.send('次へ')
+    await ctx.send('次へ進む')
 
 
+@bot.command()
+async def server(ctx):
+    await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
+    await ctx.send('ここでは課題や予定の管理をはじめとし、様々なコミュニケーションを図れます。')
+    await ctx.send('また、サーバー内には権限を管理する「笛」によって出現するチャンネルや「寮生専用チャット」「イブニングトーク」等の非公開チャンネルも存在します。')
 
 
 bot.run(token)
