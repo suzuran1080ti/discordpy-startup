@@ -31,5 +31,6 @@ async def tutorial(ctx):
 async def server(ctx):
     await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
     await ctx.send('ここでは課題や予定の管理をはじめとし、様々なコミュニケーションを図れます。')
+    await channel.send(file=discord.File('840138425809895434'))
 
 bot.run(token)
