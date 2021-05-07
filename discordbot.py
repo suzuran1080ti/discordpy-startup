@@ -25,16 +25,12 @@ async def tutorial(ctx):
  
     await ctx.send('/server')
     await ctx.send('サーバーの概要')
-
     await ctx.send('/authority')
     await ctx.send('サーバー権限')
-
     await ctx.send('/whistle')
     await ctx.send('笛の種類')
-
     await ctx.send('/terms')
     await ctx.send('利用規約')
-
     await ctx.send('/next')
     await ctx.send('次へ進む')
 
