@@ -46,12 +46,12 @@ async def server(ctx):
     await ctx.send('また、サーバー内には、権限を管理する「笛」によって出現するチャンネルや「寮生専用チャット」「イブニングトーク」等の非公開チャンネルも存在します。')
    
     
-    @bot.command()
+@bot.command()
 async def authority(ctx):
     await ctx.send('このサーバーでは笛によって階級が定められています。')
     await ctx.send('詳細は/whistleで確認できますが、通常の機能を使うのであれば「鈴付き」で申し分ありません。')
     
-    @bot.command()
+@bot.command()
 async def whistle(ctx):
     await ctx.send('笛はサーバーでの活動の評価値に準じて付与され、階級が上がるごとに機能が解禁されていきます。')
     await channel.send(file=discord.File('840138425809895434'))
@@ -60,7 +60,7 @@ async def whistle(ctx):
     await ctx.send('月笛・招待リンクの作成/サーバーミュート/コマンド部屋の使用')
     await ctx.send('黒笛・チャンネル改変/ユーザーのキック/ニックネーム変更')
 
-    @bot.command()
+@bot.command()
 async def terms(ctx):
     await ctx.send('本サービスにおいては、利用希望者が「次へ」を押した時点で本規約に同意したとみなします。')
     await ctx.send('当運営は、ユーザーに事前に通知することなく本サービスの一部を停止または中断することができるものとします。')
