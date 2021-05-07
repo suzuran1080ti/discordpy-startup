@@ -77,4 +77,8 @@ async def terms(ctx):
     await ctx.send('・露骨な嫌がらせ、または性的表現')
     await ctx.send('以上の規約に反した場合、当運営は然るべき処置を検討いたします。')
     
+@bot.command()
+async def next(ctx):
+    await ctx.send('このサーバーでは笛によって階級が定められています。')
+    
 bot.run(token)
