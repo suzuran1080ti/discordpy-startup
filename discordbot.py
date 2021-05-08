@@ -25,10 +25,13 @@ async def tutorial(ctx):
     await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('/server')
     await ctx.send('「サーバーの概要」')
+    await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('/authority')
     await ctx.send('「サーバー権限」')
+    await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('/whistle')
     await ctx.send('「笛の詳細」')
+    await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('/next')
     await ctx.send('「次へ進む」')
     await ctx.send('━━━━━━━━━━━━━━━━')
@@ -38,6 +41,7 @@ async def tutorial(ctx):
 async def server(ctx):
     await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
     await ctx.send('ここでは課題や予定の管理をはじめとし、様々な交流が図れます。')
+    await ctx.send('━━━━━━━余談━━━━━━━')
     await ctx.send('サーバー内には権限を管理する「笛」によって出現するチャンネルや「寮生専用チャット」「イブニングトーク」等の非公開チャンネルも存在します。')
     
     
