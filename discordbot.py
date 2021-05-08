@@ -22,7 +22,7 @@ async def begin(ctx):
 async def tutorial(ctx):
     await ctx.send('チュートリアルを開始します！')
     await ctx.send('知りたい内容があれば以下のコマンドを入力してください！')
-    
+    await ctx.send('━━━━━━━━━━━━━━━━━━━━')
     await ctx.send('/server')
     await ctx.send('「サーバーの概要」')
     await ctx.send('/authority')
@@ -31,7 +31,7 @@ async def tutorial(ctx):
     await ctx.send('「笛の種類」')
     await ctx.send('/next')
     await ctx.send('「次へ進む」')
-
+    await ctx.send('━━━━━━━━━━━━━━━━━━━━')
     await ctx.send('知りたい内容が無い場合は上記の利用規約をよく読んだうえで「/next」と入力してください！')
 
 @bot.command()
