@@ -28,7 +28,7 @@ async def tutorial(ctx):
     await ctx.send('/authority')
     await ctx.send('「サーバー権限」')
     await ctx.send('/whistle')
-    await ctx.send('「笛の種類」')
+    await ctx.send('「笛の詳細」')
     await ctx.send('/next')
     await ctx.send('「次へ進む」')
     await ctx.send('━━━━━━━━━━━━━━━━')
