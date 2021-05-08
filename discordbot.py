@@ -40,7 +40,7 @@ async def tutorial(ctx):
 @bot.command()
 async def server(ctx):
     await ctx.send('このサーバーは有志によって作られたクラスサーバーです。')
-    await ctx.send('ここでは課題や予定の管理をはじめとし、様々な交流が図れます。')
+    await ctx.send('ここでは課題や予定の管理をはじめとし、様々なコミュケーションを図る事ができます。')
     await ctx.send('━━━━━━━余談━━━━━━━')
     await ctx.send('サーバー内には権限を管理する「笛」によって出現するチャンネルや「寮生専用チャット」「イブニングトーク」等の非公開チャンネルも存在します。')
     
@@ -55,7 +55,7 @@ async def authority(ctx):
 async def whistle(ctx):
     await ctx.send('笛はサーバーでの活動の評価値に応じて付与され、階級が上がるごとに機能が解禁されていきます。')
     await ctx.send('笛の種類と条件については上記の資料をご覧ください。')
-    await ctx.send('主に解禁される機能（変更あり）')
+    await ctx.send('【主に解禁される機能】')
     await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('青笛・上位ボイスチャンネルの使用/コマンド部屋の閲覧')
     await ctx.send('━━━━━━━━━━━━━━━━')
