@@ -63,11 +63,12 @@ async def whistle(ctx):
     await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('黒笛・チャンネル改変/ユーザーのキック/ニックネーム変更') 
     await ctx.send('━━━━━━━━━━━━━━━━')
+    await ctx.send('※その為、各チャンネルにて権限が付与されます。')
     
       
 @bot.command()
 async def next(ctx):
-    await ctx.send('利用規約の承認を確認しました！')
+    await ctx.send('利用規約を承認しました！')
     await ctx.send('管理者がニックネームとロールを付与致しますので、自分の氏名と出席番号を入力してお待ちください！')
 
 bot.run(token)
