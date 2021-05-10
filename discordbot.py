@@ -57,11 +57,11 @@ async def whistle(ctx):
     await ctx.send('笛の種類と条件については上記の資料をご覧ください。')
     await ctx.send('【主に解禁される機能】')
     await ctx.send('━━━━━━━━━━━━━━━━')
-    await ctx.send('青笛・上位ボイスチャンネルの使用/コマンド部屋の閲覧')
+    await ctx.send('青笛・上位ボイスチャンネルの使用/コマンド部屋の閲覧/ニックネーム変更')
     await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('月笛・招待リンクの作成/サーバーミュート/コマンド部屋の使用')
     await ctx.send('━━━━━━━━━━━━━━━━')
-    await ctx.send('黒笛・チャンネル改変/ユーザーのキック/ニックネーム変更') 
+    await ctx.send('黒笛・チャンネル改変/ユーザーのキック/ニックネーム管理') 
     await ctx.send('━━━━━━━━━━━━━━━━')
     await ctx.send('※その他、各チャンネルにて権限が付与されます。')
     
