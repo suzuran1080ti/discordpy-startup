@@ -15,8 +15,8 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def begin(ctx):
     await ctx.send('3MEサーバーへようこそ！')
-    await ctx.send('まずは「/tutorial」と入力してサーバーについて学びましょう！')
-
+    await ctx.send('まずは「/tutorial」と入力してユーザー登録を実行しましょう！')
+    await ctx.send('※このチャンネルは他のユーザーに閲覧されません。')
 
 @bot.command()
 async def tutorial(ctx):
